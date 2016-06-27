@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>country parrots</title>
 <style>
+html {
+  font-size: 12px;
+}
 body {
   margin-top: 50px;
   font-family: monospace;
+}
+
+img {
+  image-rendering: pixelated;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2,button {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 0.5rem;
+}
+
+.big-parrot {
+  margin: 3rem 0;
+  width: 70%;
+  max-width: 800px;
+  height: auto;
 }
 
 button {
@@ -46,11 +77,12 @@ button:hover {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  font-size: 10px;
+  font-size: 0.5rem;
   transition: 200ms;
   opacity: 1;
   cursor: pointer;
 }
+
 .enter .parrots span {
   opacity: 0.2;
 }
@@ -64,18 +96,26 @@ button:hover {
   transform: scale(2);
 }
 
-.parrots img {
-  image-rendering: pixelated;
-}
 iframe {
   width: 75px;
   position: relative;
   top: 6px;
 }
+
+
+@media (max-width: 500px) {
+
+  html {
+    font-size: 14px;
+  }
+
+}
+
 </style>
 </head>
 <body>
 <center>
+  <img class="big-parrot" src="/parrots/sweden-parrot.gif"/>
   <h1>Country Parrots</h1>
   <h2>One parrot for each country</h2>
   <h3><iframe src="https://ghbtns.com/github-btn.html?user=reimertz&repo=countryparrots&type=star&count=true" frameborder="0" scrolling="0" height="20px"></iframe> | made by <a href="http://twitter.com/reimertz">@reimertz</a></h3>
@@ -84,7 +124,7 @@ iframe {
   </a>
 
   <h2 class="api">API</h2>
-  <h3>http://country-parrots.com/parrots/<span style="color:red">[country]</span>-parrot.gif</h3>
+  <h3>http://countryparrots.com/parrots/<span style="color:red">[country]</span>-parrot.gif</h3>
 
 
   <section class="parrots">
